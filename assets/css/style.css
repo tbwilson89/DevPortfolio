@@ -36,6 +36,7 @@ footer {
 }
 i {
   padding: 0 5px;
+  transition: transform .5s;
 }
 
 .container-styles {
@@ -60,36 +61,56 @@ i {
   border: 5px solid #694873;
   border-radius: 5px;
 }
-/* Portfolio Page */
 
-.portfolio-content {
+/* Portfolio projects */
+.portfolio-container {
   width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.project-header {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  background: #694873;
+}
+.project-header h2 {
+  color: white;
+}
+.header-icon-rotate {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+.project-information {
+  display: flex;
+  background: #4A5355;
+}
+.project-information-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.project-information-container img {
+  max-height: 300px;
+  max-width: 35%;
+}
+.project-information-show {
+  max-height: 1000px;
+}
+.project-description {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.portfolio-tile {
-  position: relative;
-  height: 250px;
-  width: 30%;
-  margin-bottom: 25px;
-  cursor: pointer;
+.project-description p {
+  padding: 25px;
 }
-.portfolio-tile img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
 }
-.portfolio-tile h3 {
-  position: absolute;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  color: #ffffff;
-  background: #694873;
-  bottom: -10px;
-}
+
+
 /* Contact Page */
 #contact form {
   width: 100%;
@@ -142,5 +163,12 @@ input[type=submit]{
   }
   .portfolio-tile h3 {
     font-size: 20px;
+  }
+  .project-information {
+    flex-direction: column;
+  }
+  .project-information-container img {
+    max-height: auto;
+    max-width: 100%;
   }
 }
