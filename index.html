@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Portfolio | Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <div id='landing-link' class="navbar-brand active page-transition" data-transition='{"element": "#landing"}'>
+            Trevor Wilson
+          </div>
+          <ul class="nav please-center-small">
+            <li class="nav-item">
+              <a id='about-link' class="nav-link page-transition" data-transition='{"element": "#about"}' href='#'>About</a>
+            </li>
+            <li class="nav-item">
+              <a id='portfolio-link' class="nav-link page-transition" data-transition='{"element": "#portfolio"}' href='#'>Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a id='contact-link' class="nav-link page-transition" data-transition='{"element": "#contact"}' href='#'>Contact</a>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </div>
+          <!-- for mobile content -->
+          <button class='navbar-toggler hidden' type="button" data-toggle='collapse' data-target='#navbar-toggle'><span class='navbar-toggler-icon'></span></button>
+
+        </div>
+      </nav>
+    </header>
+    <div class="content-area">
+      <div id='landing' class='container container-styles text-align-center'>
+        <div class="landing-page-content">
+          <h2>Trevor Wilson</h2>
+          <h3>Full Stack Web Development</h3>
+        </div>
+      </div>
+      <div id='about' class="container container-styles hidden">
+        <img src="./assets/images/selfphoto.jpg" alt="self portrait">
+        <p>
+          Solutions-driven Full Stack Web Developer with a focus on back end development, dedicated to building dynamic, efficient and functional applications. Acquired a certification through the SMU full stack web development certificate program, where my projects were consistently recognized for their quality and ingenuity.
+        </p>
+        <p>
+          Through self teaching and the SMU bootcamp, I have acquired a solid understanding of a variety of critical web development technologies such as HTML, CSS,. JavaScript, and Node.js. I also have experience working with SQL and MongoDB, and the React Framework. I have a general understanding of various other languages including C# and Python. Having a collective nine years in the technology field, which mostly consisted of support for school districts, I’ve obtained the skills to properly troubleshoot issues efficiently and with the customer / client in mind. I’m constantly trying to find the best way to solve a problem and will consistently be researching different ways to solve similar problems for the best possible solution.
+        </p>
+        <p>
+          Programming has become an enjoyable part of my life, almost like solving puzzles as a career. My passion for strategically solving problems combined with my extensive experience troubleshooting and working in tech, equip me for a future as a Back End Web Developer.
+        </p>
+      </div>
+
+      <div id='portfolio' class="container container-styles hidden">
+        <!-- section content container -->
+          <div class="portfolio-content">
+            <!-- UL flex container for portfolio links -->
+              <div class="portfolio-tile">
+                <a href="https://tbwilson89.github.io/word_guess_game/">
+                  <img src="./assets/images/questionblock.jpg" alt="Placeholder">
+                  <h3>90's Video Game "Hangman"</h3>
+                </a>
+              </div>
+              <div class="portfolio-tile tealbg">
+                <a href="https://tbwilson89.github.io/unit-4-game/">
+                  <img src="./assets/images/vader.jpg" alt="Placeholder">
+                  <h3>Star Wars RPG</h3>
+                </a>
+              </div>
+              <div class="portfolio-tile">
+                <a href="https://tbwilson89.github.io/TriviaGame/">
+                  <img src="./assets/images/cityscape.png" alt="Placeholder">
+                  <h3>Classic Game Timed Trivia</h3>
+                </a>
+              </div>
+              <div class="portfolio-tile">
+                <a href="https://tbwilson89.github.io/Giftastic">
+                  <img src="./assets/images/giphy.png" alt="Placeholder">
+                  <h3>Gif-tastic API Calls</h3>
+                </a>
+              </div>
+              <div class="portfolio-tile">
+                <img src="./assets/images/plane.png" alt="Placeholder">
+                <h3>NEXT JRNY</h3>
+              </div>
+              <div class="portfolio-tile">
+                <a href="https://tbwilson89.github.io/RPS-Multiplayer/">
+                  <img src="./assets/images/rps.jpg" alt="Placeholder">
+                  <h3>Multiplayer Rock Paper Scissors</h3>
+                </a>
+              </div>
+          </div>
+      </div>
+
+      <div id='contact' class="container container-styles hidden">
+        <h2>Contact me</h2>
+        <p><i class="far fa-envelope fa-lg"></i>trevorbwilson89@gmail.com <i class="fa fa-phone fa-md"></i>(903)804-8854</p>
+        <p></p>
+        <h3>Submit a form and I'll try to get back to you as soon as possible!</h3>
+        <form class="contact-form" action="index.html" method="post">
+          Name<br />
+          <input type="text" name="name" placeholder="John Smith"><br />
+          Email<br />
+          <input type="text" name="email" placeholder="example@gmail.com"><br />
+          Message<br />
+          <textarea name="message"></textarea><br />
+          <input type="submit" name="" value="Submit" class='submit-btn'>
+        </form>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>
+        <a href="https://github.com/tbwilson89" target='_blank'><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/tbwilson89/" target='_blank'><i class="fab fa-linkedin fa-3x"></i></a>
+      </p>
+      <p>&copy;Copyright TBW</p>
+    </footer>
+    <script src="assets/javascript/index.js"></script>
+  </body>
+</html>
