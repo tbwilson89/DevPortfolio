@@ -24,7 +24,10 @@ db.ref('projects').once('value', (snap)=>{
                 <p>${item.description}</p>
                 <div class="project-links">
                   <a href=${item.repo} target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                  <a href=${item.ghpage} target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
+                  ${item.ghpage ?
+                    `<a href=${item.ghpage} target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>`
+                    : ''
+                  }
                 </div>
               </div>
             </div>
