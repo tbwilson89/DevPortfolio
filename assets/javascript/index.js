@@ -19,7 +19,7 @@ db.ref('projects').once('value', (snap)=>{
           </div>
           <div id='${item.order}-info' class="project-information-container">
             <div class="project-information">
-              <img src=${item.image} alt="question block">
+              <img src=${item.image} alt="${item.name}">
               <div class="project-description">
                 <p>${item.description}</p>
                 <div class="project-links">
