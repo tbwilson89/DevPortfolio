@@ -10,7 +10,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAa2hP_J9KkZluMJudU-UkkcM2egNVCKF0",
+        authDomain: "tbw-portfolio-projects.firebaseapp.com",
+        databaseURL: "https://tbw-portfolio-projects.firebaseio.com",
+        projectId: "tbw-portfolio-projects",
+        storageBucket: "tbw-portfolio-projects.appspot.com",
+        messagingSenderId: "335133120464"
+      };
+      firebase.initializeApp(config);
+    </script>
     <title>Portfolio | Home</title>
   </head>
   <body>
@@ -74,126 +86,6 @@
       </div>
 
       <div id='portfolio' class="container container-styles hidden">
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='hangman-project' class="project-header" data-info="#hangman-info">
-              <h2>90's Video Game "Hangman"</h2><i id='hangman-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='hangman-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/questionblock.jpg" alt="question block">
-                <div class="project-description">
-                  <p>A hangman style game created with basic front end technology and libraries useing old school 90's video game characters as the theme.</p>
-                  <div class="project-links">
-                    <a href="https://github.com/tbwilson89/word_guess_game" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://tbwilson89.github.io/word_guess_game/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='rpg-project' class="project-header" data-info="#rpg-info">
-              <h2>Star Wars RPG</h2><i id='rpg-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='rpg-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/vader.jpg" alt="star wars vader">
-                <div class="project-description">
-                  <p>A simple RPG where the user can select one of four characters to play as, then fight the remaining three. All options are able to win as well as lose, make your decisions carefull!</p>
-                  <div class="project-links">
-                    <a href="https://github.com/tbwilson89/unit-4-game" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://tbwilson89.github.io/unit-4-game/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='interval-project' class="project-header" data-info="#interval-info">
-              <h2>Classic Game Timed Trivia</h2><i id='interval-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='interval-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/cityscape.png" alt="pixel art city">
-                <div class="project-description">
-                  <p>A trivia game with various gaming questions. But... it's time! Answer questions before the time runs out for each, otherwise you will lose credit for that answer.</p>
-                  <div class="project-links">
-                    <a href="https://github.com/tbwilson89/TriviaGame" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://tbwilson89.github.io/TriviaGame/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='gif-project' class="project-header" data-info="#gif-info">
-              <h2>Gif-tastic API Calls</h2><i  id='gif-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='gif-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/giphy.png" alt="Giphy">
-                <div class="project-description">
-                  <p>A project using the Giphy API. Use predefined buttons to pull a small selection of gifs from the API or continue clicking to append more and more gifs to those currently displaying. Also, add your own button to search for Gifs related to that topic! Then, if you find a gif you like, feel free to add it to your favorites! Favorites will display when clicking the favorites button and can be added to or removed from your list. These are also saved locally and will display when revisiting the page!</p>
-
-                  <div class="project-links">
-                    <a href="https://github.com/tbwilson89/unit-4-game" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://tbwilson89.github.io/unit-4-game/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='group-project' class="project-header" data-info="#group-info">
-              <h2>NEXT JRNY - A Trip Planning Assistant</h2><i id='group-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='group-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/plane.png" alt="plane">
-                <div class="project-description">
-                  <p>NEXT JRNY is a website built by me and three other contributors. The app allows you to either enter your own trip details or view others and see an image from that destination location as well as information based on the Kajak(Kayak) API cost to travel between a starting location and destination. The data submitted by users gets stored in a Google Firebase database and can also be logged into to store specific information based on the user, so that they can see their searches on future visits.</p>
-                  <div class="project-links">
-                    <a href="https://github.com/thewly/Project1" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://thewly.github.io/Project1/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-container">
-          <div class="project-container">
-            <div id='rps-project' class="project-header" data-info="#rps-info">
-              <h2>Multiplayer Rock Paper Scissors</h2><i id='rps-info-icon' class="fas fa-chevron-down fa-2x"></i>
-            </div>
-            <div id='rps-info' class="project-information-container">
-              <div class="project-information">
-                <img src="./assets/images/rps.jpg" alt="Rock Paper Scissor">
-                <div class="project-description">
-                  <p>Online multiplayer version of the popular in person game Rock, Paper, Scissor. The page utilizes the Google Firebase database to keep up with user connections and allow live chat and persistent data for keeping up with user names and wins. Also has the functionality to allow a user to log in with their Google account to keep their name and wins saved for each visit to the webpage!</p>
-                  <div class="project-links">
-                    <a href="https://github.com/tbwilson89/unit-4-game" target='_blank'><button class='btn btn-primary' type="button">Github Repo</button></a>
-                    <a href="https://tbwilson89.github.io/unit-4-game/" target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
 
@@ -204,11 +96,11 @@
         <h3>Submit a form and I'll try to get back to you as soon as possible!</h3>
         <form class="contact-form" action="index.html" method="post">
           Name<br />
-          <input type="text" name="name" placeholder="John Smith"><br />
+          <input id='input-name' type="text" name="name" placeholder="John Smith"><br />
           Email<br />
-          <input type="text" name="email" placeholder="example@gmail.com"><br />
+          <input id='input-email' type="text" name="email" placeholder="example@gmail.com"><br />
           Message<br />
-          <textarea name="message"></textarea><br />
+          <textarea id='input-message' name="message"></textarea><br />
           <input type="submit" name="" value="Submit" class='submit-btn'>
         </form>
       </div>

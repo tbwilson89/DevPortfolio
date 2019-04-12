@@ -73,6 +73,7 @@ i {
   justify-content: space-between;
   padding: 5px;
   background: #694873;
+  cursor: pointer;
 }
 .project-header h2 {
   color: white;
