@@ -28,6 +28,10 @@ db.ref('projects').once('value', (snap)=>{
                     `<a href=${item.ghpage} target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>`
                     : ''
                   }
+                  ${item.herokuPage ?
+                    `<a href=${item.herokuPage} target='_blank'><button class='btn btn-primary' type="button">Live Page</button></a>`
+                    : ''
+                  }
                 </div>
               </div>
             </div>
